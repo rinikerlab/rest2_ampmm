@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rest2-ampmm"
+version = "0.1.0"
+description = "AMP models and REST2-AMP/MM protocol"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Igor Gordiy" },
+    { name = "Riccardo Solazzo" },
+    { name = "Felix Pultar" },
+    { name = "Moritz Thürlemann" },
+    { name = "Enrico Ruijsenaars" }
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["ruff"]
+
+[project.urls]
+Repository = "https://github.com/rinikerlab/rest2_ampmm"
+
+[project.scripts]
+rest2-ampmm = "rest2_ampmm.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

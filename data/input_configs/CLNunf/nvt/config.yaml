@@ -1,0 +1,115 @@
+AMP_parameters_path: /SET/TO/YOUR/PATH/data/PARAMETERS_MIN_LRv2_tip4pfb.yaml
+add_custom_constraint: false
+add_prod_csv_reporter: true
+add_prod_dcd_reporter: false
+add_prod_hdf5_reporter: true
+alchemical_FE: false
+base_path: /SET/TO/YOUR/PATH/amp_simulation/CLNunf/nvt
+box_dimension: 4.0
+cache_path: null
+constraints: ''
+continue_simulation: false
+cutoff_nb: 0.9
+device_ml: cuda
+do_rest2: false
+ff_name: null
+forcefield:
+    default:
+    - amber14/tip4pfb.xml
+    - amber14-all.xml
+in_state_xml_path: null
+initial_topology_name: init_topology.pdb
+integrator_parameters:
+    friction_coefficient: 1.0
+    step_size: 0.001
+    temperature: 298.15
+integrator_type: LMI
+maxIterations: 0
+minimize: true
+mm_zone_resnames:
+- HOH
+mol_charge: -2
+molecules: null
+nonbondedMethod: PME
+numrep: 1
+out_state_xml_path: /SET/TO/YOUR/PATH/amp_simulation/CLNunf/nvt/nvt.xml
+pdb_path: /SET/TO/YOUR/PATH/data/CLNunf.pdb
+platform_name: CUDA
+production_csv_name: production_properties_trajectory.csv
+production_csv_parameters:
+    append: true
+    density: true
+    elapsedTime: false
+    kineticEnergy: true
+    potentialEnergy: true
+    progress: false
+    remainingTime: false
+    separator: "\t"
+    speed: true
+    step: true
+    systemMass: null
+    temperature: true
+    time: false
+    totalEnergy: true
+    totalSteps: null
+    volume: true
+production_hdf5_name: production_trajectory.h5
+production_hdf5_parameters:
+    cell: true
+    coordinates: true
+    enforcePeriodicBox: true
+    kineticEnergy: false
+    potentialEnergy: false
+    temperature: false
+    time: false
+    velocities: false
+production_readout_frequency: 1000
+production_steps: 100000
+qm_zone_resnames:
+- TYR
+- TYR
+- ASP
+- PRO
+- GLU
+- THR
+- GLY
+- THR
+- TRP
+- TYR
+residue_names_to_output:
+- TYR
+- TYR
+- ASP
+- PRO
+- GLU
+- THR
+- GLY
+- THR
+- TRP
+- TYR
+- HOH
+rest2_parameter_names:
+- scaling_factor_node_potential
+- scaling_factor_coulomb_qm
+- scaling_factor_coulomb_qmmm
+- scaling_factor_D4
+- scaling_factor_ZBL
+- scaling_lj_qm_mm
+rigidWater: true
+save_final_state: true
+scaling_charges: 1.0
+set_logger: true
+set_to_temperature: false
+simulation_name: nvt
+solvate: true
+solvation_definition:
+    boxSize: null
+    boxVectors: null
+    neutralize: false
+    numAdded: null
+    padding: 3
+    water_model: TIP4P-FB
+tip4p: true
+use_AMP: true
+use_barostat: false
+weights_path: /SET/TO/YOUR/PATH/data/MIN_LRv2_state_dict

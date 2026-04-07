@@ -1,0 +1,13 @@
+name: rest2_amp
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11.9
+  - cudatoolkit=11.8.0
+  - openmm-torch=1.4
+  - pycuda=2024.1
+  - mpi4py=4.0.3
+  - openmmforcefields
+  - openff-toolkit
+  - pytorch=2.3.1

@@ -1,0 +1,13 @@
+amp_simulation/*
+amp_simulations/*
+*dcd
+*h5
+*xml
+*txt
+*egg-info/*
+*pyc*
+*out
+__pycache__/*
+*ruff_cache/*
+logs/
+*err

@@ -1,0 +1,102 @@
+AMP_parameters_path: /SET/TO/YOUR/PATH/data/PARAMETERS_MIN_LRv2_tip4pfb.yaml
+add_custom_constraint: false
+add_prod_csv_reporter: true
+add_prod_dcd_reporter: false
+add_prod_hdf5_reporter: true
+alchemical_FE: false
+barostat_parameters:
+    frequency: 100
+    pressure: 1.0
+    temperature: 298.15
+barostat_type: MCB
+base_path: /SET/TO/YOUR/PATH/amp_simulation/CYC2/production_0000_0000
+box_dimension: null
+cache_path: null
+constraints: ''
+continue_simulation: true
+cutoff_nb: 0.9
+device_ml: cuda
+do_rest2: false
+ff_name: null
+forcefield:
+    default:
+    - amber14/tip4pfb.xml
+    - amber14-all.xml
+in_state_xml_path: /SET/TO/YOUR/PATH/amp_simulation/CYC2/npt/npt.xml
+initial_topology_name: init_topology.pdb
+integrator_parameters:
+    friction_coefficient: 1.0
+    step_size: 0.001
+    temperature: 298.15
+integrator_type: LMI
+maxIterations: 0
+minimize: false
+mm_zone_resnames:
+- HOH
+mol_charge: -1
+molecules: null
+nonbondedMethod: PME
+numrep: 1
+out_state_xml_path: /SET/TO/YOUR/PATH/amp_simulation/CYC2/production_0000_0000/production_0000_0000.xml
+pdb_path: /SET/TO/YOUR/PATH/amp_simulation/CYC2/npt/npt/init_topology.pdb
+platform_name: CUDA
+production_csv_name: production_properties_trajectory.csv
+production_csv_parameters:
+    append: true
+    density: true
+    elapsedTime: false
+    kineticEnergy: true
+    potentialEnergy: true
+    progress: false
+    remainingTime: false
+    separator: "\t"
+    speed: true
+    step: true
+    systemMass: null
+    temperature: true
+    time: false
+    totalEnergy: true
+    totalSteps: null
+    volume: true
+production_hdf5_name: production_trajectory.h5
+production_hdf5_parameters:
+    cell: true
+    coordinates: true
+    enforcePeriodicBox: true
+    kineticEnergy: false
+    potentialEnergy: false
+    temperature: false
+    time: false
+    velocities: false
+production_readout_frequency: 100
+production_steps: 1000000
+qm_zone_resnames:
+- PRO
+- SER
+- LEU
+- ASP
+- VAL
+residue_names_to_output:
+- PRO
+- SER
+- LEU
+- ASP
+- VAL
+rest2_parameter_names:
+- scaling_factor_node_potential
+- scaling_factor_coulomb_qm
+- scaling_factor_coulomb_qmmm
+- scaling_factor_D4
+- scaling_factor_ZBL
+- scaling_lj_qm_mm
+rigidWater: true
+save_final_state: true
+scaling_charges: 1.0
+set_logger: true
+set_to_temperature: true
+simulation_name: production_0000_0000
+solvate: false
+tip4p: true
+use_AMP: true
+use_barostat: true
+weights_path: /SET/TO/YOUR/PATH/data/MIN_LRv2_state_dict

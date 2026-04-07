@@ -1,0 +1,19 @@
+noe_id,atom1,atom2,nmr,lower_bound,upper_bound
+1,Ser HN,Ser Hb,2.6,1.6,3.8
+2,Ser HN,Ser Hb,2.6,1.6,3.8
+3,Ser HN,Val Ha,2.7,1.7,3.7
+4,Ser HN,Pro Ha,3.4,1.9,4.2
+5,Leu HN,Ser Ha,2.1,1.5,3.1
+6,Leu HN,Leu Ha,2.1,1.5,3.1
+7,Asp HN,Leu Ha,2.0,1.5,3.0
+8,Asp HN,Asp Ha,3.4,2.7,4.2
+9,Asp HN,Asp Hb,2.6,1.6,3.9
+10,Asp HN,Asp Hb,2.6,1.6,3.9
+11,Val HN,Asp HN,3.5,2.5,4.5
+12,Val HN,Asp Ha,3.0,2.2,4.1
+13,Val HN,Asp Hb,3.0,1.9,3.7
+14,Val HN,Asp Hb,3.0,1.9,3.7
+15,Val HN,Val Ha,2.5,1.7,3.2
+16,Val HN,Val Hb,2.5,1.5,3.5
+17,Val Ha,Val Hb,2.3,1.5,3.3
+18,Val Ha,Pro Ha,1.9,1.5,2.6

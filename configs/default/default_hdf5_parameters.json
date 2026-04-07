@@ -1,0 +1,10 @@
+{
+    "coordinates": true,
+    "time": false,
+    "cell": true,
+    "potentialEnergy": false,
+    "kineticEnergy": false,
+    "temperature": false,
+    "velocities": false,
+    "enforcePeriodicBox": true
+}

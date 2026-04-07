@@ -1,0 +1,250 @@
+AMP_parameters_path: /SET/TO/YOUR/PATH/data/PARAMETERS_MIN_LRv2_tip4pfb.yaml
+add_custom_constraint: false
+add_prod_csv_reporter: true
+add_prod_dcd_reporter: false
+add_prod_hdf5_reporter: true
+alchemical_FE: false
+barostat_parameters:
+    frequency: 100
+    pressure: 1.0
+    temperature: 298.15
+barostat_type: MCB
+base_path: /SET/TO/YOUR/PATH/amp_simulation/TRPu/rest2_0000_0000
+box_dimension: null
+cache_path: null
+constraints: ''
+continue_simulation: true
+cutoff_nb: 0.9
+device_ml: cuda
+do_rest2: true
+exchange_frequency: 100
+exchange_stats_path: /SET/TO/YOUR/PATH/amp_simulation/TRPu/rest2_0000_0000/rest2.log
+ff_name: null
+forcefield:
+    default:
+    - amber14/tip4pfb.xml
+    - amber14-all.xml
+in_state_xml_path: /SET/TO/YOUR/PATH/amp_simulation/TRPu/npt/npt.xml
+initial_topology_name: init_topology.pdb
+integrator_parameters:
+    friction_coefficient: 1.0
+    step_size: 0.001
+    temperature: 298.15
+integrator_type: LMI
+maxIterations: 0
+minimize: false
+mm_zone_resnames:
+- HOH
+mol_charge: 1
+molecules: null
+nonbondedMethod: PME
+numrep: 12
+out_state_xml_path: /SET/TO/YOUR/PATH/amp_simulation/TRPu/rest2_0000_0000/rest2_0000_0000.xml
+pdb_path: /SET/TO/YOUR/PATH/amp_simulation/TRPu/npt/npt/init_topology.pdb
+platform_name: CUDA
+production_csv_name: production_properties_trajectory.csv
+production_csv_parameters:
+    append: true
+    density: true
+    elapsedTime: false
+    kineticEnergy: true
+    potentialEnergy: true
+    progress: false
+    remainingTime: false
+    separator: "\t"
+    speed: true
+    step: true
+    systemMass: null
+    temperature: true
+    time: false
+    totalEnergy: true
+    totalSteps: null
+    volume: true
+production_hdf5_name: production_trajectory.h5
+production_hdf5_parameters:
+    cell: true
+    coordinates: true
+    enforcePeriodicBox: true
+    kineticEnergy: false
+    potentialEnergy: false
+    temperature: false
+    time: false
+    velocities: false
+production_readout_frequency: 100
+production_steps: 500000
+qm_zone_resnames:
+- ACE
+- ASN
+- LEU
+- TYR
+- ILE
+- GLN
+- TRP
+- LEU
+- LYS
+- ASP
+- GLY
+- GLY
+- PRO
+- SER
+- SER
+- GLY
+- ARG
+- PRO
+- PRO
+- PRO
+- SER
+- NME
+residue_names_to_output:
+- ACE
+- ASN
+- LEU
+- TYR
+- ILE
+- GLN
+- TRP
+- LEU
+- LYS
+- ASP
+- GLY
+- GLY
+- PRO
+- SER
+- SER
+- GLY
+- ARG
+- PRO
+- PRO
+- PRO
+- SER
+- NME
+rest2_parameter_names:
+- scaling_factor_node_potential
+- scaling_factor_coulomb_qm
+- scaling_factor_coulomb_qmmm
+- scaling_factor_D4
+- scaling_factor_ZBL
+- scaling_lj_qm_mm
+rest2_save_checkpoints: true
+rest2_state_paths:
+- /SET/TO/YOUR/PATH/amp_simulation/TRPu/npt/npt.xml
+- /SET/TO/YOUR/PATH/amp_simulation/TRPu/npt/npt.xml
+- /SET/TO/YOUR/PATH/amp_simulation/TRPu/npt/npt.xml
+- /SET/TO/YOUR/PATH/amp_simulation/TRPu/npt/npt.xml
+- /SET/TO/YOUR/PATH/amp_simulation/TRPu/npt/npt.xml
+- /SET/TO/YOUR/PATH/amp_simulation/TRPu/npt/npt.xml
+- /SET/TO/YOUR/PATH/amp_simulation/TRPu/npt/npt.xml
+- /SET/TO/YOUR/PATH/amp_simulation/TRPu/npt/npt.xml
+- /SET/TO/YOUR/PATH/amp_simulation/TRPu/npt/npt.xml
+- /SET/TO/YOUR/PATH/amp_simulation/TRPu/npt/npt.xml
+- /SET/TO/YOUR/PATH/amp_simulation/TRPu/npt/npt.xml
+- /SET/TO/YOUR/PATH/amp_simulation/TRPu/npt/npt.xml
+restraint_bonds_angles_rest2: false
+rigidWater: true
+save_final_state: true
+scaling_charges: 1.0
+set_logger: true
+set_to_temperature: true
+simulation_name: rest2_0000_0000
+solvate: false
+state_parameters_definition:
+-   scale_factor_angle_rest2: 0
+    scale_factor_bond_rest2: 0
+    scaling_factor_D4: 1.0
+    scaling_factor_ZBL: 1.0
+    scaling_factor_coulomb_qm: 1.0
+    scaling_factor_coulomb_qmmm: 1.0
+    scaling_factor_node_potential: 1.0
+    scaling_lj_qm_mm: 1.0
+-   scale_factor_angle_rest2: 0.5
+    scale_factor_bond_rest2: 0.5
+    scaling_factor_D4: 0.9545454545454546
+    scaling_factor_ZBL: 0.9545454545454546
+    scaling_factor_coulomb_qm: 0.9545454545454546
+    scaling_factor_coulomb_qmmm: 0.9770084209183945
+    scaling_factor_node_potential: 0.9545454545454546
+    scaling_lj_qm_mm: 0.9770084209183945
+-   scale_factor_angle_rest2: 0.55
+    scale_factor_bond_rest2: 0.55
+    scaling_factor_D4: 0.9090909090909091
+    scaling_factor_ZBL: 0.9090909090909091
+    scaling_factor_coulomb_qm: 0.9090909090909091
+    scaling_factor_coulomb_qmmm: 0.9534625892455924
+    scaling_factor_node_potential: 0.9090909090909091
+    scaling_lj_qm_mm: 0.9534625892455924
+-   scale_factor_angle_rest2: 0.6
+    scale_factor_bond_rest2: 0.6
+    scaling_factor_D4: 0.8636363636363636
+    scaling_factor_ZBL: 0.8636363636363636
+    scaling_factor_coulomb_qm: 0.8636363636363636
+    scaling_factor_coulomb_qmmm: 0.9293203772845852
+    scaling_factor_node_potential: 0.8636363636363636
+    scaling_lj_qm_mm: 0.9293203772845852
+-   scale_factor_angle_rest2: 0.65
+    scale_factor_bond_rest2: 0.65
+    scaling_factor_D4: 0.8181818181818181
+    scaling_factor_ZBL: 0.8181818181818181
+    scaling_factor_coulomb_qm: 0.8181818181818181
+    scaling_factor_coulomb_qmmm: 0.9045340337332909
+    scaling_factor_node_potential: 0.8181818181818181
+    scaling_lj_qm_mm: 0.9045340337332909
+-   scale_factor_angle_rest2: 0.7
+    scale_factor_bond_rest2: 0.7
+    scaling_factor_D4: 0.7727272727272727
+    scaling_factor_ZBL: 0.7727272727272727
+    scaling_factor_coulomb_qm: 0.7727272727272727
+    scaling_factor_coulomb_qmmm: 0.8790490729915326
+    scaling_factor_node_potential: 0.7727272727272727
+    scaling_lj_qm_mm: 0.8790490729915326
+-   scale_factor_angle_rest2: 0.75
+    scale_factor_bond_rest2: 0.75
+    scaling_factor_D4: 0.7272727272727273
+    scaling_factor_ZBL: 0.7272727272727273
+    scaling_factor_coulomb_qm: 0.7272727272727273
+    scaling_factor_coulomb_qmmm: 0.8528028654224418
+    scaling_factor_node_potential: 0.7272727272727273
+    scaling_lj_qm_mm: 0.8528028654224418
+-   scale_factor_angle_rest2: 0.8
+    scale_factor_bond_rest2: 0.8
+    scaling_factor_D4: 0.6818181818181819
+    scaling_factor_ZBL: 0.6818181818181819
+    scaling_factor_coulomb_qm: 0.6818181818181819
+    scaling_factor_coulomb_qmmm: 0.8257228238447705
+    scaling_factor_node_potential: 0.6818181818181819
+    scaling_lj_qm_mm: 0.8257228238447705
+-   scale_factor_angle_rest2: 0.8500000000000001
+    scale_factor_bond_rest2: 0.8500000000000001
+    scaling_factor_D4: 0.6363636363636364
+    scaling_factor_ZBL: 0.6363636363636364
+    scaling_factor_coulomb_qm: 0.6363636363636364
+    scaling_factor_coulomb_qmmm: 0.7977240352174656
+    scaling_factor_node_potential: 0.6363636363636364
+    scaling_lj_qm_mm: 0.7977240352174656
+-   scale_factor_angle_rest2: 0.9
+    scale_factor_bond_rest2: 0.9
+    scaling_factor_D4: 0.5909090909090908
+    scaling_factor_ZBL: 0.5909090909090908
+    scaling_factor_coulomb_qm: 0.5909090909090908
+    scaling_factor_coulomb_qmmm: 0.7687061147858073
+    scaling_factor_node_potential: 0.5909090909090908
+    scaling_lj_qm_mm: 0.7687061147858073
+-   scale_factor_angle_rest2: 0.95
+    scale_factor_bond_rest2: 0.95
+    scaling_factor_D4: 0.5454545454545454
+    scaling_factor_ZBL: 0.5454545454545454
+    scaling_factor_coulomb_qm: 0.5454545454545454
+    scaling_factor_coulomb_qmmm: 0.7385489458759964
+    scaling_factor_node_potential: 0.5454545454545454
+    scaling_lj_qm_mm: 0.7385489458759964
+-   scale_factor_angle_rest2: 1.0
+    scale_factor_bond_rest2: 1.0
+    scaling_factor_D4: 0.5
+    scaling_factor_ZBL: 0.5
+    scaling_factor_coulomb_qm: 0.5
+    scaling_factor_coulomb_qmmm: 0.7071067811865476
+    scaling_factor_node_potential: 0.5
+    scaling_lj_qm_mm: 0.7071067811865476
+tip4p: true
+use_AMP: true
+use_barostat: true
+weights_path: /SET/TO/YOUR/PATH/data/MIN_LRv2_state_dict
