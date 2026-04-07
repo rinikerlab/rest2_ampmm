@@ -1,5 +1,7 @@
 # REST2-AMP/MM
 
+![Logo](AMP_logo.png)
+
 ## Overview
 
 **REST2-AMP/MM** provides the code, parameters, and pretrained weights for the  
