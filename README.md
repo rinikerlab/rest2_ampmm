@@ -24,7 +24,7 @@ This project is designed to be used with **conda/mamba**.
 
 ```bash
 conda env create -f environment.yaml
-conda activate amp_bms
+conda activate rest2_ampmm
 ```
 
 ### 2. Install the package

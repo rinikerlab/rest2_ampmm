@@ -1,4 +1,4 @@
-name: rest2_amp
+name: rest2_ampmm
 channels:
   - conda-forge
   - defaults
