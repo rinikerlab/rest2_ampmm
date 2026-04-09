@@ -47,7 +47,7 @@ The model:
 
 ### Related Work
 
-- REST2-AMP/MM: **[Placeholder for publication]**  
+- REST2-AMP/MM: https://chemrxiv.org/doi/full/10.26434/chemrxiv.15001723/v1  
 - AMPv3-BMS25: https://chemrxiv.org/doi/full/10.26434/chemrxiv-2026-kx9w0  
 - BMS25 dataset: https://www.research-collection.ethz.ch/entities/researchdata/15515ac0-d9a6-4966-b658-5e391907ef43  
 - BMS25 publication: https://chemrxiv.org/doi/full/10.26434/chemrxiv-2025-xzp6k  
@@ -316,7 +316,7 @@ If you use this code, please cite our papers:
     author = {Solazzo, Riccardo and Gordiy, Igor and Riniker, Sereina},
     journal = {ChemRxiv},
     year = {2026}
-    doi = {\url{PLACEHOLDER}},
+    doi = {\url{https://doi.org/10.26434/chemrxiv.15001723/v1}},
 
 }
 
@@ -370,4 +370,4 @@ The authors thanks Antonia Kuhn and Stefan Chrin for code review and Francisco J
 
 ## License
 
-The AMP-BMS code is published and distributed under the [MIT License](LICENSE). 
+The REST2-AMP/MM code is published and distributed under the [MIT License](LICENSE). 
